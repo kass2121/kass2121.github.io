@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>textBoxes.html</title>
+</head>
+
+<body>
+    <script>
+        function textInput() {
+            let input = document.getElementById("input");
+            let txtOutput = document.getElementById("txtOutput");
+            let str = input.value;
+            txtOutput.value = str;
+        }
+    </script>
+    Input:
+    <br>
+    <input type="text" value="" id="input"><br><br> Output:
+    <br>
+    <input type="text" style="height:50px; width:120px;" value="" id="txtOutput"><br><br>
+    <input type="button" value="click me" onclick="textInput() ">
+
+</body>
+
+</html>

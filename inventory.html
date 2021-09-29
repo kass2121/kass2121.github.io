@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory </title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        th {
+            border-style: solid;
+            border-color: rgb(78, 73, 73);
+            background-color: #200ae4;
+            color: aliceblue;
+            width: 10%;
+        }
+        
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>Inventory</h3>
+    <br>
+    <div id="container">
+        <div class="input">Item Name:<br> <input type="text" id="itemeName" placeholder="Computers"> </div>
+        <br>
+        <div class="input"> Item Category: <br><input type="text" id="itemCategory" placeholder="Digital"> </div>
+        <br>
+        <div class="input">Quality:<br> <input type="number" id="quantity" placeholder="100"> </div>
+        <br>
+        <button id="add"> Add </button>
+    </div>
+    <table id="display">
+        <tr>
+            <th> Product Name </th>
+            <th> Category </th>
+            <th> Quality </th>
+        </tr>
+    </table>
+    <script>
+        let add = document.getElementById('add');
+        add.addEventListener("click", displayDetails);
+        let row = 1;
+
+        function displayDetails() {
+            let itemeName = document.getElementById('itemeName').value;
+            let itemCategory = document.getElementById('itemCategory').value;
+            let quantity = document.getElementById('quantity').value;
+            if (!itemeName || !itemCategory || !quantity) {
+                alert("Please fill all the box")
+                return;
+            }
+            let display = document.getElementById('display');
+            let newRow = display.insertRow(row);
+
+            let cell1 = newRow.insertCell(0);
+            let cell2 = newRow.insertCell(1);
+            let cell3 = newRow.insertCell(2);
+            cell1.innerHTML = itemeName;
+            cell2.innerHTML = itemCategory;
+            cell3.innerHTML = quantity;
+
+            row++;
+        }
+    </script>
+</body>
+
+</html>
