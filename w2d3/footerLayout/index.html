@@ -1,0 +1,342 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> w2d3 Assignmet</title>
+</head>
+<style>
+    .imgNew {
+        color: white;
+        width: 20px;
+        object-fit: contain;
+        margin-top: 15px;
+    }
+
+    .imgClass {
+        width: 40%;
+        object-fit: contain;
+    }
+
+    footer {
+        display: flex;
+        width:70%;
+        background-color: black;
+        flex-direction: column;
+        padding: 50px 100px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 0.8fr;
+        row-gap: 10px;
+        column-gap: 30px;
+        color: white;
+        justify-content: center;
+        color: gray;
+    }
+
+    .heading {
+        font-size: 20px;
+        color: white;
+    }
+
+    .aboutMeMargin {
+        margin-bottom: 40px;
+    }
+
+    .middleColumngrid {
+        display: grid;
+        column-gap: 20px;
+        align-content:start;
+       
+        grid-template-columns: 20px 1fr;
+        font-size: 14px;
+        font-style: italic;
+    }
+    .lastColumn{
+        display:flex;
+        flex-wrap:wrap;
+        gap:5px;
+        align-content:flex-start;
+    }
+    .links{
+        display:flex;
+        justify-content:space-between;
+        color:white;
+    }
+    .emailBox{
+        height:40px;
+        width:90%;
+        color:white;
+        background-color:darkslategray; 
+        display:flex;
+        justify-content:space-between;
+        border-radius:40px;
+    }
+</style>
+
+<body>
+    <footer>
+        <div class="container">
+            <p class="heading">About Me</p>
+            <p class="heading">Latest Tweet</p>
+            <p class="heading">Instagram</p>
+            <div>
+                <p class="aboutMeMargin">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Nulla at volutpat diam ut venenatis tellus. Sed id semper risus
+                    Nulla at volutpat diam ut venenatis tellus. Sed id semper risus
+                </p>
+                <p style="color:white;">
+                    <img src="../images/twitter-white.png" style="width:20px;"> 322323
+                </p>
+                <p style="color:white;">
+                    <img src="../images/twitter-white.png" style="width:20px;"> email.com
+                </p>
+                <div class="emailBox">
+                    <p style="padding:0px 20px;line-height: 10px;">Enter your e-mail</p>
+                    <div style="border-radius:40px;background-color: brown;color:white;">
+                        <p style="padding:0px 30px;line-height: 10px;"> Send</p>
+                    </div>
+                </div>
+            </div>
+            <div class="middleColumngrid">
+                <img src="../images/twitter-white.png" class="imgNew">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Nulla at volutpat diam ut venenatis tellus. Sed id semper risus</p>
+                <img src="../images/twitter-white.png" class="imgNew">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Nulla at volutpat diam ut venenatis tellus. Sed id semper risus</p>
+                <img src="../images/twitter-white.png" class="imgNew">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Nulla at volutpat diam ut venenatis tellus. Sed id semper risus</p>
+            </div>
+            <div class="lastColumn">
+               <img src="image1.jpg" class="imgClass" />
+                <img src="image2.jpg" class="imgClass" />
+                <img src="image3.jpg" class="imgClass" />
+                <img src="image4.jpg" class="imgClass" />
+            </div>
+        </div>
+        <div style="border-top:1px solid #ffffff80">&nbsp;</div>
+        <div class="links">
+            <div style="display:flex;gap:15px;">
+                <label> Home</label>
+                <label> About</label>
+                <label> Our Works</label>
+                <label> Services</label>
+                <label> Blog</label>
+                <label> Contacts</label>
+            </div>
+            <div style="font-size: 18px;">
+                Colorlib
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+</head>
+<style>
+    .imagValue {
+        color: white;
+        width: 20px;
+        object-fit: contain;
+        margin-top: 15px;
+    }
+
+    .classImg {
+        width: 50%;
+        object-fit: contain;
+    }
+
+    footer {
+        display: flex;
+        width:70%;
+        background-color: black;
+        flex-direction: column;
+        padding: 50px 100px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 0.8fr;
+        row-gap: 10px;
+        column-gap: 30px;
+        color: white;
+        justify-content: center;
+        color: gray;
+    }
+
+    .heading {
+        font-size: 20px;
+        color: white;
+    }
+
+    .col-1 {
+        margin-bottom: 40px;
+    }
+
+    .col-2 {
+        display: grid;
+        column-gap: 20px;
+        align-content:start;
+        /* row-gap:10px; */
+        grid-template-columns: 20px 1fr;
+        font-size: 14px;
+        font-style: italic;
+    }
+    .col-3{
+        display:flex;
+        flex-wrap:wrap;
+        gap:5px;
+        align-content:flex-start;
+    }
+    .links{
+        display:flex;
+        justify-content:space-between;
+        color:white;
+    }
+    .emailBox{
+        height:40px;
+        width:90%;
+        color:white;
+        background-color:darkslategray; 
+        display:flex;
+        justify-content:space-between;
+        border-radius:40px;
+    }
+</style>
+
+<body>
+    <footer>
+        <div class="container">
+            <p class="heading">About Me</p>
+            <p class="heading">Latest Tweet</p>
+            <p class="heading">Instagram</p>
+            <div>
+                <p class="col-1">The text her.....The text her.....The text her.....The text her.....
+                    The text her.....The text her.....The text her....The text her.....The text her.....
+                </p>
+                <p style="color:white;">
+                    <img src="../images/twitter-white.png" style="width:20px;"> 322323
+                </p>
+                <p style="color:white;">
+                    <img src="../images/twitter-white.png" style="width:20px;"> email.com
+                </p>
+                <div class="emailBox">
+                    <p style="padding:0px 20px;line-height: 10px;">Enter your e-mail</p>
+                    <div style="border-radius:40px;background-color: brown;color:white;">
+                        <p style="padding:0px 30px;line-height: 10px;"> Send</p>
+                    </div>
+                </div>
+            </div>
+            <div class="middleColumngrid">
+                <img src="../images/twitter-white.png" class="imgNew">
+                <p> The text her.....The text her.....The text her.....The text her.....
+                    The text her.....The text her.....The text her....The text her.....The text her.....</p>
+                <img src="../images/twitter-white.png" class="imgNew">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Nulla at volutpat diam ut venenatis tellus. Sed id semper risus</p>
+                <img src="../images/twitter-white.png" class="imgNew">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Nulla at volutpat diam ut venenatis tellus. Sed id semper risus</p>
+            </div>
+            <div class="lastColumn">
+                <img src="image1.jpg" class="imgClass" />
+                <img src="image2.jpg" class="imgClass" />
+                <img src="image3.jpg" class="imgClass" />
+                <img src="image4.jpg" class="imgClass" />
+            </div>
+        </div>
+        <div style="border-top:1px solid #ffffff80">&nbsp;</div>
+        <div class="links">
+            <div style="display:flex;gap:15px;">
+                <label> Home</label>
+                <label> About</label>
+                <label> Our Works</label>
+                <label> Services</label>
+                <label> Blog</label>
+                <label> Contacts</label>
+            </div>
+            <div style="font-size: 18px;">
+                Colorlib
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+                <div class=" col-2 ">
+                    <h5 class="heading2-5 ">Latesr Tweet</h5>
+                    <ul class="footer_ul2_amrc ">
+                        <li><a href="# "><i class=" "></i> </a>
+                            <p>The text display here...</p>
+                        </li>
+                        <li><a href="# "><i class=" "></i> </a>
+                            <pThe text display here...</p>
+                        </li>
+                        <li><a href="# "><i class=" "></i> </a>
+                            <p>The text display here...</p>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <div class=" col-3 ">
+                    <h5 class="heading3-5 ">Instagram</h5>
+                    <div class="column ">
+                        <img src="image2.jpg " style="width:100% ">
+                        <img src="image3.jpg " style="width:100% ">
+
+                    </div>
+                    <div class="column ">
+                        <img src="image1.jpg " style="width:100% ">
+                        <img src="image8.jpg " style="width:100% ">
+
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <div class="container ">
+                    <ul class="foote_bottom ">
+                        <li><a href="# ">Home</a></li>
+                        <li><a href="# ">About</a></li>
+                        <li><a href="# ">Our Works</a></li>
+                        <li><a href="# ">Services</a></li>
+                        <li><a href="# ">Blog</a></li>
+                        <li><a href="# ">Contacts</a></li>
+                    </ul>
+                    <p class="logo ">Colorlib<b></p>
+
+                </div>
+
+    </footer>
+</body>
+
+</html>
