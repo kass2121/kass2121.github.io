@@ -19,7 +19,7 @@ function renderEmployees(emps) {
 
     from(emps)
         .pipe(
-            // filter(emp => emp.gender === 'female'),
+           
             map(emp => {
                 emp.myname = emp.name.first + " " + emp.name.last;
                 emp.mylocation = {};
@@ -40,9 +40,9 @@ function renderEmployees(emps) {
                 </div>
                 <hr>
             `;
-            let div = document.createElement('div'); //<div></div>
-            div.innerHTML = template; //<div>template</div>
-            div.classList = 'row'; //<div class="row">template</div>
+            let div = document.createElement('div');
+            div.innerHTML = template;
+            div.classList = 'row'; 
             empDiv.appendChild(div);
         });
 }
