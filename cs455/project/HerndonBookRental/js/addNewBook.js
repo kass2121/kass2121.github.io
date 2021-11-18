@@ -17,6 +17,10 @@ window.onload = function() {
         const formNewBook = document.querySelector("#formNewBook");
         formNewBook.addEventListener("submit", addNewBook);
     };
+    const resetForm = function() {
+        const reset = document.querySelector("#btnReset");
+        reset.addEventListener("submit", clearFormDataFields);
+    };
 
     const getBookData = function() {
         const bookObj = {
@@ -55,6 +59,7 @@ window.onload = function() {
             console.log(response.statusText);
         }
     };
+    resetForm();
 
     initAddNewBook();
 };
