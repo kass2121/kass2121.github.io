@@ -1,25 +1,24 @@
 /**
- * 
+ * @author Kassaw
  */
-// console.log("welcome to my books");
+// 
 "use strict";
 
-// IIFE
 // window.onload
-window.onload = function () {
+window.onload = function() {
     // BookForm data fields
-    const txtTitle = document.querySelector("#title"); // document.getElementById("title");
+    const txtTitle = document.querySelector("#title");
     const txtISBN = document.querySelector("#isbn");
     const txtOverdueFee = document.querySelector("#overdueFee");
     const txtPublisher = document.querySelector("#publisher");
     const txtDatePublisher = document.querySelector("#datePublished");
 
-    const initAddNewBook = function () {
+    const initAddNewBook = function() {
         const formNewBook = document.querySelector("#formNewBook");
         formNewBook.addEventListener("submit", addNewBook);
     };
 
-    const getBookData = function () {
+    const getBookData = function() {
         const bookObj = {
             "title": txtTitle.value,
             "isbn": txtISBN.value,
@@ -30,7 +29,7 @@ window.onload = function () {
         return bookObj;
     };
 
-    const clearFormDataFields = function () {
+    const clearFormDataFields = function() {
         txtTitle.value = "";
         txtISBN.value = "";
         txtOverdueFee.value = "";
@@ -38,7 +37,7 @@ window.onload = function () {
         txtDatePublisher.value = "";
     };
 
-    const addNewBook = async function (event) {
+    const addNewBook = async function(event) {
         event.preventDefault();
         const bookObj = getBookData(); //
         const response = await fetch("https://elibraryrestapi.herokuapp.com/elibrary/api/book/add", {
@@ -48,7 +47,7 @@ window.onload = function () {
                 "Content-Type": "application/json"
             }
         });
-        if(response.ok) {
+        if (response.ok) {
             console.log(response.statusText);
             console.log(await response.json());
             clearFormDataFields();
@@ -57,7 +56,5 @@ window.onload = function () {
         }
     };
 
-    txtTitle.focus();
     initAddNewBook();
 };
-
