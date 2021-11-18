@@ -17,7 +17,7 @@
             <h4>Welcome to Herndon Books Rental Service<sup>&reg;</sup></h4>
             <hr/>
             <div style="font-size: 1em">
-                <img src="book-banner.png" id = "book-banner"/><br/><br/>
+                <img src="book-banner.PNG" id = "book-banner"/><br/><br/>
                 <p>We are a top-flight, fully-digitized library.
                     Find out more about us and
                     and learn how we can serve you with a widest variety of books and lots of other
